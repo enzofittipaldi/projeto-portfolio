@@ -227,6 +227,23 @@ article h2{
   border-radius: 8px;
 }
 
+#projeto-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#projeto-container .titulo{
+  color: var(--destaque);
+  font-size: 1.1em;
+}
+
+#projeto-container .descricao{
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
 footer{
   background-color: var(--destaque);
   color: var(--texto-inverso);
@@ -245,6 +262,21 @@ footer a:hover{
 }
 
 @media screen and (min-width: 768px){
+  main{
+    grid-template-columns: auto 300px 1fr auto;
+  }
+ 
+  section#ficha{
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  section#detalhes{
+    grid-column: 3 / 4;
+  }
+ 
   #skill-container{
     grid-template-columns: 1fr 1fr;
   }
